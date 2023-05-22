@@ -107,7 +107,7 @@ int main(int argc, char *argv[])
     {
         std::cout << file_content[i];
         std::this_thread::sleep_for(mSeconds);
-        // This next line is very(!) important
+        // This next line is very(!) important, b'cause StdIn & StdOut are buffered!
         std::cout.flush();
     }
 
